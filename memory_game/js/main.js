@@ -17,7 +17,7 @@ var cards = [
     {
         rank: "king",
         suit: "diamonds",
-        cardImage: "images/queen-of-diamonds.png"
+        cardImage: "images/king-of-diamonds.png"
     }
 ];
 
@@ -43,8 +43,8 @@ var flipCard = function () {
     }
 }
 
-var createBoard = function() {
-    for(var i = 0; i <= cards.length; i++) {
+var createBoard = function () {
+    for (var i = 0; i < cards.length; i++) {
         var cardElement = document.createElement('img');
         cardElement.setAttribute('src', 'images/back.png');
         cardElement.setAttribute('data-id', i);
